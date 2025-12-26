@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { PlaceHolderImages } from "./placeholder-images";
 
 const avatar = PlaceHolderImages.find(p => p.id === 'avatar');
@@ -6,13 +6,16 @@ const project1 = PlaceHolderImages.find(p => p.id === 'project-1');
 const project2 = PlaceHolderImages.find(p => p.id === 'project-2');
 const project3 = PlaceHolderImages.find(p => p.id === 'project-3');
 const project4 = PlaceHolderImages.find(p => p.id === 'project-4');
+const project5 = PlaceHolderImages.find(p => p.id === 'project-5');
+const project6 = PlaceHolderImages.find(p => p.id === 'project-6');
+
 
 export const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Contact', href: '#contact' },
+  // { label: 'Contact', href: '#contact' },
 ];
 
 export const PROFILE_DATA = {
@@ -31,10 +34,13 @@ export const SKILLS_DATA = {
   title: "Skills & Expertise",
   description: "I have experience with a wide range of technologies and tools. Here are some of my key skills.",
   skills: [
-    'React', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Node.js', 
-    'Python', 'GraphQL', 'REST APIs', 'PostgreSQL', 'Docker', 'Kubernetes',
-    'Google Cloud', 'Firebase', 'Tailwind CSS', 'Figma'
-  ]
+    'Flutter', 'Dart', 'Kotlin', 'iOS (Swift, SwiftUI, Objective-C)', 'Jetpack Compose', 'Platform Channels',
+    'Clean Architecture', 'Modular Design', 'OOP', 'SOLID', 'BLoC', 'Cubit', 'Provider', 'GetX',
+    'Firebase (Auth, Firestore, Realtime DB, Cloud Messaging)', 'Laravel', 'REST APIs', 'WebSocket', 'Socket.IO',
+    'CI/CD (GitHub Actions, Fastlane)', 'App Store & Play Store Releases', 'Unit/Widget/Integration Testing', 'Git',
+    'Google Maps API', 'Live Location Tracking', 'Geofencing', 'Heatmaps',
+    'Code Reviews', 'Mobile Standards', 'Mentoring', 'Agile/Scrum', 'Jira', 'Asana'
+  ]   
 };
 
 export const EXPERIENCE_DATA = {
@@ -67,36 +73,44 @@ export const PROJECTS_DATA = {
   description: "A selection of projects that showcase my skills and passion for building.",
   projects: [
     {
-      title: 'Project Phoenix',
-      description: 'A comprehensive dashboard for data analysis, built with Next.js and a custom charting library. Features real-time data streaming and advanced filtering capabilities.',
+      title: 'Tawreed',
       image: project1!,
-      tags: ['Next.js', 'TypeScript', 'Data Viz'],
-      liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/Tawreed',
+      appStoreUrl: 'https://apps.apple.com/us/app/tawreed/id1661793471',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.alhawsabah.tawreed'
     },
     {
-      title: 'AI Content Generator',
-      description: 'A platform that leverages generative AI to create marketing copy and social media posts. Built using Python, FastAPI, and React, with a focus on a simple and intuitive user experience.',
+      title: 'Moments',
       image: project2!,
-      tags: ['React', 'Python', 'AI/ML'],
-      liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/Moments',
+      appStoreUrl: 'https://apps.apple.com/us/app/moments-event/id6449982436',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.alhawsabah.moments'
     },
     {
-      title: 'ConnectSphere Mobile',
-      description: 'A cross-platform social networking app developed with React Native. It includes features like instant messaging, a dynamic news feed, and profile customization.',
+      title: 'Hayakum',
       image: project3!,
-      tags: ['React Native', 'Firebase', 'Mobile'],
-      liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/us/app/hayakum/id1573012871',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.magdsoft.hayakum'
     },
     {
-      title: 'E-commerce Storefront',
-      description: 'A fully-featured e-commerce site with a custom CMS for product management. Optimized for performance and SEO, resulting in a 20% increase in conversion rates.',
+      title: 'iClosed',
       image: project4!,
-      tags: ['Next.js', 'GraphQL', 'E-commerce'],
-      liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/us/app/iclosed/id1535388383',
+      playStoreUrl: '#'
+    },
+    {
+        title: 'Bazar',
+        image: project5!,
+        githubUrl: '#',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.magdsoft.bazar',
+    },
+    {
+        title: 'Asas',
+        image: project6!,
+        githubUrl: '#',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.magdsoft.asas',
     }
   ]
 };
