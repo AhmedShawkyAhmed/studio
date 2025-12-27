@@ -3,7 +3,7 @@
     {
       "id": "avatar",
       "description": "A portrait of a smiling person.",
-      "imageUrl": "https://drive.google.com/uc?export=view&id=1tSKE3ctVvMp9LUduNA9U-Ci5LqXuShO2",
+      "imageUrl": "public/images/appLogo.png",
       "imageHint": "portrait person"
     },
     {
