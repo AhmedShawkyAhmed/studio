@@ -102,6 +102,9 @@ export const SKILLS_DATA = {
       skills: [
         { name: "Firebase" },
         { name: "Laravel" },
+        { name: "Supabase" },
+        { name: "GraphQL" },
+        { name: "SQL" },
         { name: "REST APIs" },
         { name: "WebSocket" },
         { name: "Socket.IO" },
