@@ -178,51 +178,55 @@ export const PROJECTS_DATA = {
     {
       title: 'Sonic Mobility',
       image: project16!,
-      githubUrl: '#',
-      playStoreUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/eg/app/sonic-mobility-sharing-scooter/id6447569706',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.SonicMobility.sonic&pcampaignid=web_share',
     },
     {
       title: 'Imtyazat',
       image: project6!,
-      playStoreUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/bh/app/imtyazat-%D8%A7%D9%85%D8%AA%D9%8A%D8%A7%D8%B2%D8%A7%D8%AA/id6744577970',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=qa.gov.mofa.imtyazatpublic&pcampaignid=web_share',
     },
     {
       title: 'CeFoure',
       image: project4!,
-      appStoreUrl: '#',
-      playStoreUrl: '#'
+      appStoreUrl: 'https://apps.apple.com/bh/app/cefour/id6476445911',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.cefour.cefour&pcampaignid=web_share',
     },
     {
-        title: 'HiShare',
-        image: project5!,
-        playStoreUrl: '#',
+      title: 'HiShare',
+      image: project5!,
+      appStoreUrl: 'https://apps.apple.com/bh/app/%D9%87%D8%A7%D9%8A-%D8%B4%D9%8A%D8%B1/id6739570429',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.hishare.platform&pcampaignid=web_share',
     },
     {
       title: 'BeTrend',
       image: project1!,
-      // githubUrl: 'https://github.com/AhmedShawkyAhmed/Tawreed',
-      // appStoreUrl: 'https://apps.apple.com/us/app/tawreed/id1661793471',
-      // playStoreUrl: 'https://play.google.com/store/apps/details?id=com.alhawsabah.tawreed'
+      appStoreUrl: 'https://apps.apple.com/bh/app/be-trend-%D8%A8%D9%8A-%D8%AA%D8%B1%D9%86%D8%AF/id1658865427',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.diwan.beTrend&pcampaignid=web_share',
     },
     {
       title: 'Sehtak Tehmna',
       image: project14!,
-      playStoreUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/bh/app/%D8%B5%D8%AD%D8%AA%D9%83-%D8%AA%D9%87%D9%85%D9%86%D8%A7/id6477756584',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.sihatukTuhumuna.sihatukTuhumuna&pcampaignid=web_share',
     },
     {
       title: 'Tripta',
       image: project18!,
-      playStoreUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/bh/app/tripta-eg/id1640910594',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.tripta.user&pcampaignid=web_share',
     },
     {
       title: 'Tripta Hero',
       image: project19!,
-      playStoreUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/bh/app/tripta-hero/id1640911684',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.tripta.driver&pcampaignid=web_share',
     },
     {
       title: 'Bird Store',
       image: project2!,
-      githubUrl: 'https://github.com/AhmedShawkyAhmed/Moments'
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/bird_store_ios.git'
     },
     {
       title: 'Blue Wave',
@@ -232,12 +236,13 @@ export const PROJECTS_DATA = {
     {
       title: 'Steps Tracker',
       image: project17!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/step_tracker.git',
     },
     {
       title: 'JetCare',
       image: project7!,
-      playStoreUrl: '#',
+      appStoreUrl: 'https://apps.apple.com/bh/app/jet-care/id6446169634',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.jetcareeg.jetcare&pcampaignid=web_share',
     },
     {
       title: 'Osta',
@@ -262,7 +267,7 @@ export const PROJECTS_DATA = {
     {
       title: 'My Expenses',
       image: project8!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/shawky.git',
     },
     {
       title: 'Otlop',
@@ -279,47 +284,47 @@ export const PACKAGES_DATA = {
     {
       title: 'ShawkyCLI',
       image: project15!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/shawky_cli.git',
     },
     {
       title: 'Maps Plugin',
       image: project22!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/heat_map_plugin.git',
     },
     {
       title: 'Network Service',
       image: project23!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/network_service.git',
     },
     {
       title: 'Location Service',
       image: project21!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/location_service.git',
     },
     {
       title: 'Security Service',
       image: project26!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/security_service.git',
     },
     {
       title: 'Socket Service',
       image: project27!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/socket_service.git',
     },
     {
       title: 'Notification Service',
       image: project24!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/notification_service.git',
     },
     {
       title: 'Permission Service',
       image: project25!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/permission_service.git',
     },
     {
       title: 'Hive Service',
       image: project20!,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/hive_service.git',
     }
   ]
 }
