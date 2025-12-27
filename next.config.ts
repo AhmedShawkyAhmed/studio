@@ -45,6 +45,7 @@ const nextConfig: NextConfig = {
 
 
 // const nextConfig: NextConfig = {
+//   /* config options here */
 //   typescript: {
 //     ignoreBuildErrors: true,
 //   },

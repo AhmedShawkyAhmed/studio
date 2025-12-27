@@ -3,169 +3,169 @@
     {
       "id": "avatar",
       "description": "A portrait of a smiling person.",
-      "imageUrl": "/images/appLogo.png",
+      "imageUrl": "/ShawkyDev/images/appLogo.png",
       "imageHint": "portrait person"
     },
     {
       "id": "project-1",
       "description": "BeTrend",
-      "imageUrl": "/images/BeTrend.png",
+      "imageUrl": "/ShawkyDev/images/BeTrend.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-2",
       "description": "Bird Store",
-      "imageUrl": "/images/BirdStore.png",
+      "imageUrl": "/ShawkyDev/images/BirdStore.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-3",
       "description": "Blue Wave",
-      "imageUrl": "/images/BlueWave.png",
+      "imageUrl": "/ShawkyDev/images/BlueWave.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-4",
       "description": "CeFour",
-      "imageUrl": "/images/CeFour.png",
+      "imageUrl": "/ShawkyDev/images/CeFour.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-5",
       "description": "HiShare",
-      "imageUrl": "/images/HiShare.png",
+      "imageUrl": "/ShawkyDev/images/HiShare.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-6",
       "description": "Imtyazat",
-      "imageUrl": "/images/Imtyazat.png",
+      "imageUrl": "/ShawkyDev/images/Imtyazat.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-7",
       "description": "JetCare",
-      "imageUrl": "/images/JetCare.png",
+      "imageUrl": "/ShawkyDev/images/JetCare.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-8",
       "description": "My Expenses",
-      "imageUrl": "/images/MyExpenses.png",
+      "imageUrl": "/ShawkyDev/images/MyExpenses.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-9",
       "description": "Osta",
-      "imageUrl": "/images/Osta.png",
+      "imageUrl": "/ShawkyDev/images/Osta.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-10",
       "description": "Osta Provider",
-      "imageUrl": "/images/OstaProvider.png",
+      "imageUrl": "/ShawkyDev/images/OstaProvider.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-11",
       "description": "Otlop",
-      "imageUrl": "/images/Otlop.png",
+      "imageUrl": "/ShawkyDev/images/Otlop.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-12",
       "description": "Seda",
-      "imageUrl": "/images/Seda.png",
+      "imageUrl": "/ShawkyDev/images/Seda.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-13",
       "description": "Seda Driver",
-      "imageUrl": "/images/SedaDriver.png",
+      "imageUrl": "/ShawkyDev/images/SedaDriver.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-14",
       "description": "Sehtak Tehmna",
-      "imageUrl": "/images/Sehtak.png",
+      "imageUrl": "/ShawkyDev/images/Sehtak.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-15",
       "description": "ShawkyCLI",
-      "imageUrl": "/images/ShawkyCLI.png",
+      "imageUrl": "/ShawkyDev/images/ShawkyCLI.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-16",
       "description": "Sonic Mobility",
-      "imageUrl": "/images/Sonic.png",
+      "imageUrl": "/ShawkyDev/images/Sonic.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-17",
       "description": "Steps Tracker",
-      "imageUrl": "/images/StepsTracker.png",
+      "imageUrl": "/ShawkyDev/images/StepsTracker.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-18",
       "description": "Tripta",
-      "imageUrl": "/images/Tripta.png",
+      "imageUrl": "/ShawkyDev/images/Tripta.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-19",
       "description": "Tripta Hero",
-      "imageUrl": "/images/TriptaHero.png",
+      "imageUrl": "/ShawkyDev/images/TriptaHero.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-20",
       "description": "Hive Service",
-      "imageUrl": "/images/HiveService.png",
+      "imageUrl": "/ShawkyDev/images/HiveService.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-21",
       "description": "Location Service",
-      "imageUrl": "/images/LocationService.png",
+      "imageUrl": "/ShawkyDev/images/LocationService.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-22",
       "description": "Map Plugin",
-      "imageUrl": "/images/MapPlugin.png",
+      "imageUrl": "/ShawkyDev/images/MapPlugin.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-23",
       "description": "Network Service",
-      "imageUrl": "/images/NetworkService.png",
+      "imageUrl": "/ShawkyDev/images/NetworkService.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-24",
       "description": "Notification Service",
-      "imageUrl": "/images/NotificationService.png",
+      "imageUrl": "/ShawkyDev/images/NotificationService.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-25",
       "description": "Permission Service",
-      "imageUrl": "/images/PermissionService.png",
+      "imageUrl": "/ShawkyDev/images/PermissionService.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-26",
       "description": "Security Service",
-      "imageUrl": "/images/SecurityService.png",
+      "imageUrl": "/ShawkyDev/images/SecurityService.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-27",
       "description": "Socket Service",
-      "imageUrl": "/images/SocketService.png",
+      "imageUrl": "/ShawkyDev/images/SocketService.png",
       "imageHint": "mobile app"
     }
   ]
