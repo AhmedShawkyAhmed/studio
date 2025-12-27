@@ -1,64 +1,74 @@
-'use server';
-/**
- * @fileOverview This file defines a Genkit flow for auto-suggesting skills based on project descriptions.
- *
- * It exports:
- * - `suggestSkills`: A function that takes project descriptions as input and returns a list of suggested skills with confidence levels.
- * - `SuggestSkillsInput`: The input type for the `suggestSkills` function.
- * - `SuggestSkillsOutput`: The output type for the `suggestSkills` function.
- */
-
-import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import { z } from "zod";
 
 const SuggestSkillsInputSchema = z.object({
-  projectDescriptions: z
-    .array(z.string())
-    .describe('An array of project descriptions to analyze.'),
+  projectDescriptions: z.array(z.string()),
 });
+
 export type SuggestSkillsInput = z.infer<typeof SuggestSkillsInputSchema>;
 
 const SuggestSkillsOutputSchema = z.object({
   suggestedSkills: z.array(
     z.object({
-      skill: z.string().describe('The suggested skill.'),
-      confidence: z
-        .number()
-        .min(0)
-        .max(1)
-        .describe('The confidence level (0-1) for the suggested skill.'),
+      skill: z.string(),
+      confidence: z.number().min(0).max(1),
     })
-  ).describe('A list of suggested skills with confidence levels.'),
+  ),
 });
+
 export type SuggestSkillsOutput = z.infer<typeof SuggestSkillsOutputSchema>;
 
-export async function suggestSkills(input: SuggestSkillsInput): Promise<SuggestSkillsOutput> {
-  return suggestSkillsFlow(input);
-}
+const skillKeywords: Record<string, string[]> = {
+  Flutter: ["flutter", "dart", "bloc", "provider"],
+  "Android (Kotlin)": ["kotlin", "android"],
+  "iOS (Swift)": ["swift", "ios"],
+  Firebase: ["firebase", "firestore", "auth"],
+  "Google Maps": ["maps", "geolocation", "gps"],
+  WebSockets: ["socket", "realtime", "websocket"],
+  "REST APIs": ["api", "rest", "http"],
+  "Clean Architecture": ["clean architecture", "mvc", "mvvm"],
+  "CI/CD": ["ci", "cd", "github actions", "pipeline"],
+};
 
-const suggestSkillsPrompt = ai.definePrompt({
-  name: 'suggestSkillsPrompt',
-  input: {schema: SuggestSkillsInputSchema},
-  output: {schema: SuggestSkillsOutputSchema},
-  prompt: `You are an AI assistant that analyzes project descriptions and suggests relevant skills.
+export async function suggestSkills(
+  input: SuggestSkillsInput
+): Promise<SuggestSkillsOutput> {
+  // ✅ Validate input
+  const parsed = SuggestSkillsInputSchema.safeParse(input);
 
-  Analyze the following project descriptions and suggest a list of skills that the engineer likely possesses, along with a confidence level (0-1) for each skill.
-  Return the skills in JSON format.
-
-  Project Descriptions:
-  {{#each projectDescriptions}}
-  - {{{this}}}
-  {{/each}}`,
-});
-
-const suggestSkillsFlow = ai.defineFlow(
-  {
-    name: 'suggestSkillsFlow',
-    inputSchema: SuggestSkillsInputSchema,
-    outputSchema: SuggestSkillsOutputSchema,
-  },
-  async input => {
-    const {output} = await suggestSkillsPrompt(input);
-    return output!;
+  if (!parsed.success) {
+    return { suggestedSkills: [] };
   }
-);
+
+  const text = parsed.data.projectDescriptions
+    .join(" ")
+    .toLowerCase();
+
+  const suggestedSkills: SuggestSkillsOutput["suggestedSkills"] = [];
+
+  for (const [skill, keywords] of Object.entries(skillKeywords)) {
+    let matches = 0;
+
+    for (const keyword of keywords) {
+      if (text.includes(keyword)) {
+        matches++;
+      }
+    }
+
+    if (matches > 0) {
+      suggestedSkills.push({
+        skill,
+        confidence: Math.min(1, 0.4 + matches / keywords.length),
+      });
+    }
+  }
+
+  // Optional fake delay (UX polish)
+  await new Promise<void>(resolve => setTimeout(resolve, 500));
+
+  // ✅ GUARANTEED return
+  return {
+    suggestedSkills: suggestedSkills.sort(
+      (a, b) => b.confidence - a.confidence
+    ),
+  };
+}
