@@ -2,6 +2,11 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { PlaceHolderImages } from "./placeholder-images";
 
 const avatar = PlaceHolderImages.find(p => p.id === 'avatar');
+
+if (!avatar) {
+  throw new Error("Avatar not found in PlaceHolderImages");
+}
+
 const project1 = PlaceHolderImages.find(p => p.id === 'project-1');
 const project2 = PlaceHolderImages.find(p => p.id === 'project-2');
 const project3 = PlaceHolderImages.find(p => p.id === 'project-3');
