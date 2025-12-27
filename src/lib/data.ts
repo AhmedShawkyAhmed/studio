@@ -1,5 +1,21 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { PlaceHolderImages } from "./placeholder-images";
+import {
+  FlutterIcon,
+  DartIcon,
+  KotlinIcon,
+  SwiftIcon,
+  FirebaseIcon,
+  GitIcon,
+  GitLabIcon,
+  GitHubActionsIcon,
+  FigmaIcon,
+  JiraIcon,
+  AsanaIcon,
+} from "@/components/icons";
+import type { SVGProps } from "react";
+
+export type IconProps = SVGProps<SVGSVGElement>;
 
 const avatar = PlaceHolderImages.find(p => p.id === 'avatar');
 const project1 = PlaceHolderImages.find(p => p.id === 'project-1');
@@ -55,16 +71,77 @@ export const PROFILE_DATA = {
 
 export const SKILLS_DATA = {
   title: "Skills & Expertise",
-  description: "I have experience with a wide range of technologies and tools. Here are some of my key skills.",
-  skills: [
-    'Flutter', 'Dart', 'Kotlin', 'iOS (Swift, SwiftUI, Objective-C)', 'Jetpack Compose', 'Platform Channels',
-    'Clean Architecture', 'Modular Design', 'OOP', 'SOLID', 'BLoC', 'Cubit', 'Provider', 'GetX',
-    'Firebase (Auth, Firestore, Realtime DB, Cloud Messaging)', 'Laravel', 'REST APIs', 'WebSocket', 'Socket.IO',
-    'CI/CD (GitHub Actions, Fastlane)', 'App Store & Play Store Releases', 'Unit/Widget/Integration Testing', 'Git',
-    'Google Maps API', 'Live Location Tracking', 'Geofencing', 'Heatmaps',
-    'Code Reviews', 'Mobile Standards', 'Mentoring', 'Agile/Scrum', 'Jira', 'Asana'
-  ]   
+  description: "Here's a breakdown of my technical skills, from mobile development to backend systems and leadership.",
+  skillCategories: [
+    {
+      title: "Mobile Engineering",
+      skills: [
+        { name: "Flutter", icon: FlutterIcon },
+        { name: "Dart", icon: DartIcon },
+        { name: "Android (Kotlin)", icon: KotlinIcon },
+        { name: "iOS (Swift, SwiftUI)", icon: SwiftIcon },
+        { name: "Jetpack Compose" },
+        { name: "Platform Channels" },
+        { name: "SDK Integration" },
+      ],
+    },
+    {
+      title: "Architecture & State Management",
+      skills: [
+        { name: "Clean Architecture" },
+        { name: "Modular Design" },
+        { name: "OOP & SOLID" },
+        { name: "BLoC & Cubit" },
+        { name: "Provider" },
+        { name: "GetX" },
+        { name: "Offline-First" },
+      ],
+    },
+    {
+      title: "Backend & Real-Time Systems",
+      skills: [
+        { name: "Firebase", icon: FirebaseIcon },
+        { name: "Laravel" },
+        { name: "REST APIs" },
+        { name: "WebSocket" },
+        { name: "Socket.IO" },
+      ],
+    },
+    {
+      title: "DevOps, CI/CD & Testing",
+      skills: [
+        { name: "GitHub Actions", icon: GitHubActionsIcon },
+        { name: "Fastlane" },
+        { name: "Unit & Integration Testing" },
+        { name: "App Store & Play Store" },
+        { name: "Git", icon: GitIcon },
+        { name: "GitHub", icon: Github },
+        { name: "GitLab", icon: GitLabIcon },
+      ],
+    },
+    {
+      title: "Maps & Location Services",
+      skills: [
+        { name: "Google Maps API" },
+        { name: "Live Location Tracking" },
+        { name: "Routing & Geofencing" },
+        { name: "Heatmaps" },
+      ],
+    },
+    {
+      title: "Leadership & Collaboration",
+      skills: [
+        { name: "Code Reviews" },
+        { name: "Mobile Standards" },
+        { name: "Mentoring" },
+        { name: "Agile/Scrum" },
+        { name: "Jira", icon: JiraIcon },
+        { name: "Asana", icon: AsanaIcon },
+      ],
+    },
+  ],
 };
+
 
 export const EXPERIENCE_DATA = {
   title: "Professional Experience",
@@ -96,104 +173,98 @@ export const PROJECTS_DATA = {
   description: "A selection of projects that showcase my skills and passion for building.",
   projects: [
     {
-      title: 'BeTrend',
-      image: project1!,
-      githubUrl: 'https://github.com/AhmedShawkyAhmed/Tawreed',
-      appStoreUrl: 'https://apps.apple.com/us/app/tawreed/id1661793471',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.alhawsabah.tawreed'
-    },
-    {
-      title: 'Bird Store',
-      image: project2!,
-      githubUrl: 'https://github.com/AhmedShawkyAhmed/Moments',
-      appStoreUrl: 'https://apps.apple.com/us/app/moments-event/id6449982436',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.alhawsabah.moments'
-    },
-    {
-      title: 'Blue Wave',
-      image: project3!,
+      title: 'Sonic Mobility',
+      image: project16!,
       githubUrl: '#',
-      appStoreUrl: 'https://apps.apple.com/us/app/hayakum/id1573012871',
-      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.magdsoft.hayakum'
+      playStoreUrl: '#',
+    },
+    {
+      title: 'Imtyazat',
+      image: project6!,
+      playStoreUrl: '#',
     },
     {
       title: 'CeFoure',
       image: project4!,
-      githubUrl: '#',
-      appStoreUrl: 'https://apps.apple.com/us/app/iclosed/id1535388383',
+      appStoreUrl: '#',
       playStoreUrl: '#'
     },
     {
         title: 'HiShare',
         image: project5!,
-        githubUrl: '#',
-        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.magdsoft.bazar',
+        playStoreUrl: '#',
     },
     {
-        title: 'Imtyazat',
-        image: project6!,
-        githubUrl: '#',
-        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.magdsoft.asas',
+      title: 'BeTrend',
+      image: project1!,
+      // githubUrl: 'https://github.com/AhmedShawkyAhmed/Tawreed',
+      // appStoreUrl: 'https://apps.apple.com/us/app/tawreed/id1661793471',
+      // playStoreUrl: 'https://play.google.com/store/apps/details?id=com.alhawsabah.tawreed'
+    },
+    {
+      title: 'Sehtak Tehmna',
+      image: project14!,
+      playStoreUrl: '#',
+    },
+    {
+      title: 'Tripta',
+      image: project18!,
+      playStoreUrl: '#',
+    },
+    {
+      title: 'Tripta Hero',
+      image: project19!,
+      playStoreUrl: '#',
+    },
+    {
+      title: 'Bird Store',
+      image: project2!,
+      githubUrl: 'https://github.com/AhmedShawkyAhmed/Moments'
+    },
+    {
+      title: 'Blue Wave',
+      image: project3!,
+      githubUrl: '#'
+    },
+    {
+      title: 'Steps Tracker',
+      image: project17!,
+      githubUrl: '#',
     },
     {
       title: 'JetCare',
       image: project7!,
-      githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'My Expenses',
-      image: project8!,
-      githubUrl: '#',
       playStoreUrl: '#',
     },
     {
       title: 'Osta',
       image: project9!,
       githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
       title: 'Osta Provider',
       image: project10!,
       githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'Otlop',
-      image: project11!,
-      githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
       title: 'Seda',
       image: project12!,
-      githubUrl: '#',
       playStoreUrl: '#',
     },
     {
       title: 'Seda Driver',
       image: project13!,
-      githubUrl: '#',
       playStoreUrl: '#',
     },
     {
-      title: 'Sehtak Tehmna',
-      image: project14!,
+      title: 'My Expenses',
+      image: project8!,
       githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
-      title: 'Tripta',
-      image: project18!,
+      title: 'Otlop',
+      image: project11!,
       githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'Tripta Hero',
-      image: project19!,
-      githubUrl: '#',
-      playStoreUrl: '#',
     },
   ]
 };
@@ -206,67 +277,46 @@ export const PACKAGES_DATA = {
       title: 'ShawkyCLI',
       image: project15!,
       githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'Sonic Mobility',
-      image: project16!,
-      githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'Steps Tracker',
-      image: project17!,
-      githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'Hive Service',
-      image: project20!,
-      githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'Location Service',
-      image: project21!,
-      githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
       title: 'Maps Plugin',
       image: project22!,
       githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
       title: 'Network Service',
       image: project23!,
       githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
-      title: 'Notification Service',
-      image: project24!,
+      title: 'Location Service',
+      image: project21!,
       githubUrl: '#',
-      playStoreUrl: '#',
-    },
-    {
-      title: 'Permission Service',
-      image: project25!,
-      githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
       title: 'Security Service',
       image: project26!,
       githubUrl: '#',
-      playStoreUrl: '#',
     },
     {
       title: 'Socket Service',
       image: project27!,
       githubUrl: '#',
-      playStoreUrl: '#',
+    },
+    {
+      title: 'Notification Service',
+      image: project24!,
+      githubUrl: '#',
+    },
+    {
+      title: 'Permission Service',
+      image: project25!,
+      githubUrl: '#',
+    },
+    {
+      title: 'Hive Service',
+      image: project20!,
+      githubUrl: '#',
     }
   ]
 }
